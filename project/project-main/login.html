@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: rgb(97, 145, 154);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(1, 5, 1);
+            color: white;
+            font-size: 16px;
+        }
+    </style>
+    <script>
+        function validateForm() {
+            var name = document.forms["loginForm"]["name"].value;
+            var password = document.forms["loginForm"]["password"].value;
+            
+            if (name.trim() === "") {
+                alert("Username must be filled out");
+                return false;
+            }
+            if (password.trim() === "") {
+                alert("Password must be filled out");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form name="loginForm" action="#" method="post" onsubmit="return validateForm()">
+            <label>Username:</label> 
+            <input type="text" name="name" required>
+            <label>Password:</label> 
+            <input type="password" name="password" required>
+            <br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>

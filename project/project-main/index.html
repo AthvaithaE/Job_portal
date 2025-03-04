@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senior Citizen Support Portal</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom styling */
+        .navbar {
+            background-color: #030b14; /* Attractive blue */
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+            font-size: 18px;
+        }
+        .nav-link:hover {
+            color: #f8f9fa !important;
+        }
+        .btn-custom {
+            background-color: #266f71;
+            color: #000;
+            border-radius: 20px;
+            padding: 5px 15px;
+            margin-left: 10px;
+        }
+        .btn-custom:hover {
+            background-color: #f9f8f6;
+        }
+        .hero-section {
+            background: url('https://source.unsplash.com/1600x900/?elderly,care') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .service-card {
+            transition: 0.3s;
+        }
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+
+        .carousel {
+            margin: 40px auto;
+            width: 80%;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .carousel img {
+            height: 450px;
+            object-fit: cover;
+        }
+        .service-card {
+            transition: 0.3s;
+        }
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+        
+        .footer {
+            background-color: #0b0b0b;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body style="background: linear-gradient(135deg, #f7f8f9, #266f71)">
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Job application portal</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+            </ul>
+            <div class="d-flex">
+                <a href="login.html" class="btn btn-custom">Login</a>
+                <a href="signup.html" class="btn btn-custom">Sign Up</a>
+                <a href=" " class="btn btn-custom"> Register</a>
+                <a href=" " class="btn btn-custom"> Find Employee</a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <h1 class="fw-bold">The Smart Way to recruit-Find Qualified Candidates Effortlessly</h1>
+        <p class="lead">"Simplifying recruitments by connecting businesses with top-tier talent"</p>
+        <a href="signup.html" class="btn btn- btn-dark">Join Now</a>
+        <p class="lead" style="color:black">Finding the right talent has never been easier! Our job portal is designed to connect
+             employers with skilled professionals, making recruitment a seamless and efficient process.
+              Whether you're looking for fresh talent or experienced professionals, our platform helps you discover, evaluate, 
+            and hire the perfect candidates to grow your business. Start your hiring journey today!</p>
+    </div>
+</section>
+
+
+
+<!-- Carousel Section -->
+<div id="jobCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#jobCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#jobCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#jobCarousel" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="1.jpg" class="d-block w-100" alt="Job Search">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Find the Best Jobs</h5>
+                <p>Explore thousands of opportunities in different industries.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="2.jpg" class="d-block w-100" alt="Apply Easily">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Easy Job Application</h5>
+                <p>Apply for jobs with a single click.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="3.jpg" class="d-block w-100" alt="Grow Your Career">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Advance Your Career</h5>
+                <p>Connect with top employers and grow professionally.</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#jobCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#jobCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+<!-- Services Section -->
+<div class="container my-5">
+    <h2 class="text-center fw-bold">Our Services</h2>
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card service-card p-3 shadow">
+                <img src="1.jpg"class="card-img-top" alt="Transportation">
+                <div class="card-body">
+                    <h5 class="card-title">User Register</h5>
+                    <p class="card-text">User Registration & Authentication – Secure login and signup for job seekers and employers.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card service-card p-3 shadow">
+                <img src="3.jpg" class="card-img-top" alt="Grocery Delivery">
+                <div class="card-body">
+                    <h5 class="card-title"> Employer Dashboard </h5>
+                    <p class="card-text">Manage job postings, view applications, and track candidates</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="col-md-4">
+            <div class="card service-card p-3 shadow">
+                <img src="2.jpg" class="card-img-top" alt="Health Assistance">
+                <div class="card-body">
+                    <h5 class="card-title">Resume Upload & Profile Management</h5>
+                    <p class="card-text"> Create and manage professional profiles with resumes.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br>
+
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2025 Senior Citizen Support Portal. All Rights Reserved.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
